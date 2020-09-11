@@ -1,0 +1,608 @@
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+header {
+    height: 30%;
+    display: flex;
+    padding: 10px 100px 30px 150px;
+    background-color:rgb(163, 162, 162);
+}
+
+.logo {
+    padding-top: 20px;
+    color : #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px 0px 300px;
+}
+
+.nav-menu {
+    list-style: none;
+    color: #ffffff;
+}
+
+.nav-menu li {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-menu li a {
+    text-decoration : none;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover{
+    color :#f5b74c;
+}
+
+/************** Profile Section ******************/
+.profile-section{
+    padding : 50px 100px 100px 100px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.profile-pic{
+    background-image: url("../images/profile.jpg");
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-info{
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.profile-h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: rgb(58, 57, 57);
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+
+.profile-details{
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    list-style-type:none;
+
+}
+
+.profile-details li{
+    margin-right: 20px;
+}
+
+.profile-left,
+.profile-middle,
+.profile-right{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 60px 10px 10px 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.profile-left{
+    background-color: indianred;
+}
+
+.profile-left a{
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+
+.profile-middle{
+    background-color: rgb(140, 228, 219);
+}
+
+.profile-middle a{
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+
+.profile-right{
+    background-color: rgb(212, 173, 73);
+}
+
+.profile-right a{
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+
+.profile-left:hover{
+    background-color : rgb(197, 45, 70);
+}
+
+.profile-middle:hover{
+    background-color: rgb(71, 226, 211);
+}
+
+.profile-right:hover{
+    background-color: rgb(243, 177, 11);
+}
+
+/************** Forums Section ******************/
+.forums-section{
+    padding : 50px 100px 0px 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.forums-section-left{
+    width: 60%;
+}
+
+.forums-section-right{
+    width: 40%;
+}
+
+.forums-h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: rgb(94, 94, 94);
+}
+
+hr{
+    width:100%;
+    text-align:left;
+    margin-left:0;
+    margin-top: 10px;
+}
+
+.forum-p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    padding : 20px 0px;
+    width: 90%;
+}
+
+.forum-middle{
+    align-content: center;
+    width: 90%;
+    text-align: center;
+}
+
+.forum-img{
+    background-image: url("../images/prague.jpg");
+    width: 100%;
+    height: 400px;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.img-desc{
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.img-link{
+    font-size: 14px;
+    color: black;
+}
+
+.open-source-contribution{
+    padding: 50px;
+    align-content: center;
+    list-style-type:none;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+
+.circle {
+    border-radius: 50%;        
+    background-color: rgb(241, 56, 87);
+    display:inline-block;
+    line-height:80px;
+    width: 80px;
+}
+
+.contri-1 a,
+.contri-2 a,
+.contri-3 a,
+.contri-4 a,
+.contri-5 a,
+.contri-6 a{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+.contri-1,
+.contri-2,
+.contri-3,
+.contri-4,
+.contri-5,
+.contri-6{
+    padding-top: 5px;
+    display: flex;
+}
+
+.open-source-contribution li a:hover{
+    background-color : rgb(197, 45, 70);
+}
+
+.contri-li-p{
+    width: 60%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.contribution-section{
+    margin-top:-20px;
+    padding-top:20px;
+    align-content: center;
+    background-color:rgb(163, 162, 162);
+}
+
+.details{
+    padding-bottom: 20px;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contri-h3{
+    padding:5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+.contri-details{
+    background: white;
+    width: 50%;
+    display: inline-block;
+    padding: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 10%;  
+}
+
+.contri-details ul{
+    list-style:disc;
+    padding: 10px;
+}
+
+.contri-details ul li p{
+    margin-bottom: 20px;
+}
+
+.contri-details ul li ul{
+    list-style: circle;
+}
+
+/**************************** Recoginition Section***********************************/
+
+.recoginition-section{
+    padding : 50px 100px 0px 100px;
+    justify-content: center;
+}
+
+.recog-h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: rgb(94, 94, 94);
+}
+
+.recog-p{
+    padding-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.awards-container,
+.awards-container-single{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: rgb(127, 166, 238);
+    border: 2px black solid;
+    margin: 20px;
+}
+
+.col-large{
+    width: 50%;
+    height: 600px;
+    align-content: center;
+}
+
+.col-large-1 p{
+    color: rgb(63, 63, 62);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-top: 200px;
+}
+
+.col-large-1{
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.col-large-2{
+   background-image: url("../images/award1.png");
+   background-size: cover;
+   background-position: center;
+}
+
+.awards-container-single{
+    background-color: rgb(194, 194, 196);
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.col-single{
+    width: 100%;
+    height: 600px;
+    align-content: center;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.col-3{
+   background-image: url("../images/award2.jpg");
+   margin : 20px;
+   background-size: cover;
+   background-position: center;
+}
+
+.col-4{
+    background-image: url("../images/award3.jpg");
+    margin : 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.col-large-5{
+    background-image: url("../images/award4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*********************Experience Section*******************************/
+.experience-section{
+    padding : 50px 100px 0px 100px;
+}
+
+.exp-h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: rgb(94, 94, 94);
+}
+
+.exp-p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    padding : 20px 0px;
+    width: 90%;
+}
+
+.exp-sum,
+.career-sum{
+    width: 80%;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.exp-sum img,
+.career-sum img{
+    height :500px ;
+    width : 100%;
+    margin-left: 100px;
+}
+
+/*******************Project Section************************************/
+.projects-section{
+    padding : 30px 50px 0px 50px;
+    justify-content: center;
+}
+
+.project-h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: rgb(94, 94, 94);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding-top: 20px;
+    border: 1px solid rgb(175, 175, 175);
+}
+
+.timeline ul li {
+    margin-bottom: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.year-h4,
+.company-h4,
+.role-h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    margin : 5px 0;
+    letter-spacing: 1px;
+}
+
+.company-h4{
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.role-h4{
+    font-size: 20px;
+}
+
+.point {
+    min-width: 10px;
+    height: 10px;
+    background-color: #5c5b5c;
+    border-radius: 100%;
+    z-index: 2;
+    border: 1px #747373 solid;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    left: 50%;
+    background-color: #ccc8c8;
+}
+
+.content {
+    width: 50%;
+    padding: 0 5px;
+}
+
+.timeline ul li:nth-child(odd) .content,
+.timeline ul li:nth-child(even) .date  {
+    padding-left: 0;
+}
+
+.timeline ul li:nth-child(even) .content,
+.timeline ul li:nth-child(odd) .date {
+    padding-right: 0;
+}
+
+.date {
+    width: 50%;
+    padding: 0 10px;
+    font-weight: normal;
+}
+
+.date h4 {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.content h3 {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: rgb(156, 155, 155);
+    margin-bottom: 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.content ul {
+    padding: 0 10px;
+    background-color: rgb(231, 228, 228);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    list-style-type: circle;
+    font-size: 14px;
+}
+
+.content ul li{
+    padding: 5px 0;
+    margin: 0 10px;
+    list-style-type: disc;
+    display: list-item;
+}
+
+.timeline ul li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline ul li:nth-child(even) .date h4 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+/*********************Footer Section********************/
+footer{
+    height: 20%;
+    display: flex;
+    padding: 20px 100px;
+    background-color:rgb(163, 162, 162);
+    justify-content: center;
+}
+
+.btn-linkedin {
+    background: #0E76A8;
+    border-radius: 0;
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #084461;
+    padding: 5px;
+}
+
+.btn-linkedin:link, .btn-linkedin:visited {
+    color: #fff;
+}
+
+.btn-linkedin:active, .btn-linkedin:hover {
+    background: #084461;
+    color: #fff;
+}
