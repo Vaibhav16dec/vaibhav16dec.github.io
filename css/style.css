@@ -577,6 +577,11 @@ hr{
     margin-left: 20px;
 }
 
+.symbols {
+    width: 25%;
+    padding: 10px;
+}
+
 
 /*********************Footer Section********************/
 footer{
