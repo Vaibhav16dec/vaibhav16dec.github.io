@@ -578,11 +578,12 @@ hr{
 }
 
 .symbols-section{
-    padding: 10px;
+    padding-top: 50px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: center;
+    list-style-type:none;
 }
 
 .symbols {
