@@ -581,6 +581,9 @@ hr{
     width: 25%;
     padding: 10px;
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 
