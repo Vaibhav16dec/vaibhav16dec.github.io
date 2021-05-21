@@ -577,13 +577,16 @@ hr{
     margin-left: 20px;
 }
 
-.symbols {
-    width: 25%;
+.symbols-section{
     padding: 10px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: center;
+}
+
+.symbols {
+    padding: 20px;
 }
 
 
