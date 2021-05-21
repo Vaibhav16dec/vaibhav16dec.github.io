@@ -580,6 +580,7 @@ hr{
 .symbols {
     width: 25%;
     padding: 10px;
+    display: flex;
 }
 
 
